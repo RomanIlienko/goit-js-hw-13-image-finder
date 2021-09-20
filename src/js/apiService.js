@@ -1,5 +1,5 @@
 export default function fetchImages(searchQuery) {
-    const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${searchQuery}&page=${page}&per_page=12&key=${API_KEY}`;
+    const url = `https://pixabay.com/api/?key=${API_KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&page=${page}&per_page=12`;
     const API_KEY = '23479864-16575353206961163feee44f8'
     let page = 1
     
@@ -11,4 +11,3 @@ export default function fetchImages(searchQuery) {
         })
 }
 
-https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=что_искать&page=номер_страницы&per_page=12&key=твой_ключ
