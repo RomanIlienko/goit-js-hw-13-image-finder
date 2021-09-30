@@ -17,16 +17,15 @@
   <link href="../node_modules/@pnotify/mobile/dist/PNotifyMobile.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <!-- Form -->
+  <h1 class="tittle">Image finder</h1>
+
   <form class="search-form" id="search-form">
-    <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+    <input type="text" class="input" name="query" autocomplete="off" placeholder="Search images..." />
   </form>
 
-  <!-- Card -->
-  
+  <ul class="gallery"></ul>
 
-  <ul class="gallery">
-    <!-- Список <li> с карточками изображений -->
-  </ul>
+  <button type="button" class="btn is-hidden" data-action="load-more">
+    <span class="label">Load-more</span>
 </body>
 </html>
